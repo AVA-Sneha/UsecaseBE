@@ -8,7 +8,7 @@ var users = [
 ]
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send("Welcome to my Bankend!!!");
+  res.send("Welcome to my Backend!!!");
 });
 
 router.post('/login', function(req, res){
