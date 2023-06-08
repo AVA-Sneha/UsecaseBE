@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: customer-app
+  name: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: customer-app
+      app: backend
   template:
     metadata:
       labels:
-        app: customer-app
+        app: backend
     spec:
       containers:
-        - name: customer-app
+        - name: backend
           image: acrca.azurecr.io/backend-image:v1
           ports:
             - containerPort: 9000
@@ -21,10 +21,11 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: customer-app-service
+  name: backend
+  namespace: nonprod
 spec:
   selector:
-    app: customer-app
+    app: backend
   ports:
     - protocol: TCP
       port: 9000
