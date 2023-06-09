@@ -3,7 +3,7 @@ var router = express.Router();
 
 var users = [
   {
-    email: 'abc@gmail.com', password: 'password'
+    email: 'abc@gmail.com', password: '123'
   }
 ]
 /* GET home page. */
