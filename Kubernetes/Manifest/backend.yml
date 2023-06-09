@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: acrca.azurecr.io/backend-image:v1
+          image: acrca.azurecr.io/backend-image:latest
           ports:
             - containerPort: 9000
 ---
