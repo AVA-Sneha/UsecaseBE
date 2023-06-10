@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 9000
 
-ENTRYPOINT [ "node", "index.js" ]
+ENTRYPOINT [ "node", "app.js" ]
