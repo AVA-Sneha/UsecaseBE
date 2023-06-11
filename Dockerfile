@@ -4,10 +4,10 @@ WORKDIR /code
 
 COPY package.json package.json
 
-RUN npm install js-yaml
+RUN npm install 
 
 COPY . .
 
 EXPOSE 9000
 
-CMD [""npm"", ""start""]
+CMD [""npm"", ""run"", ""start""]
